@@ -12,7 +12,8 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Mico</title>
+  <title>FAM E-HEALTH SCREENING</title>
+  <link rel="shortcut icon" href="images/logo12.png" type="image/x-icon">
 
 
   <!-- bootstrap core css -->
@@ -34,11 +35,17 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-
+  <style>
+    /* CSS untuk memberikan efek warna putih pada latar belakang */
+    .slider_section {
+      background-color: white; /* Efek warna putih */
+      /* Masukkan atribut lain sesuai kebutuhan */
+    }
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+  </style>
 </head>
 
-<body class="sub_page">
-
+<body>
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -54,13 +61,13 @@
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span>
-                Email : demo@gmail.com
+              	Email : proyekindepentt13@gmail.com
               </span>
             </a>
             <a href="">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               <span>
-                Location
+                Jl Tamtama No. 6, Labuh Baru Timur, Payung Sekaki
               </span>
             </a>
           </div>
@@ -72,7 +79,7 @@
             <a class="navbar-brand" href="index.html">
               <img src="images/logo.png" alt="">
             </a>
-            </a>
+
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class=""> </span>
@@ -81,41 +88,25 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <div class="d-flex mr-auto flex-column flex-lg-row align-items-center">
                 <ul class="navbar-nav  ">
-                  <li class="nav-item ">
+                  <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="about.html"> About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="treatment.html">Treatment</a>
+                    <a class="nav-link" href="treatment.html">SOLUSI</a>
                   </li>
-                  
-                  <li class="nav-item active">
-                    <a class="nav-link" href="testimonial.html">Testimonial</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="testimonial.html">CEK FAM</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact Us</a>
                   </li>
                 </ul>
               </div>
-            <!--  <div class="quote_btn-container">
-                <a href="doctor.html">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                  <span>
-                    Login
-                  </span>
-                </a>
-                <a href="doctor.html">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                  <span>
-                    Sign Up
-                  </span>
-                </a> -->
-                <form class="form-inline">
-                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
+              <div class="quote_btn-container">
+                
                 </form>
               </div>
             </div>
@@ -123,14 +114,6 @@
         </div>
       </div>
     </header>
-    <!-- end header section -->
-  </div>
-
-
-
-  <!-- client section -->
-  <section class="client_section layout_pading">
-   <section>
     
     
 <style>
@@ -275,17 +258,17 @@ button:hover {
       <input type="number" id="umur">
       <label for="jenisKelamin" class="jenisKelaminLabel">Jenis Kelamin:</label>
 <select id="jenisKelamin" class="jenisKelaminDropdown">
-  <option value="laki">Laki-laki</option>
+  
   <option value="perempuan">Perempuan</option>
 </select>
       <button onclick="lanjutkanTes()">Lanjutkan Tes</button>
     </div>
     <div id="kuesioner" style="display: none;">
-      <h2>Kuesioner Anemia</h2>
+      <h2>Kuesioner FAM E-HEALTH SCREENING</h2>
       <form id="quizForm">
         <!-- Pertanyaan 1 -->
         <div id="pertanyaan1">
-          <p>Pertanyaan 1: Apakah Anda merasa lelah secara terus-menerus?</p>
+          <p>Pertanyaan 1:	Apakah anda mengalami benjolan sekitar payudara dan area ketiak (axila)? </p>
           <label>
             <input type="checkbox" id="p1Ya" onclick="jawab('p1', 'ya')"> Ya
           </label>
@@ -298,7 +281,7 @@ button:hover {
         </div>
         
         <div id="pertanyaan2">
-          <p>Pertanyaan 2: Apakah Anda mengalami pusing atau sakit kepala?</p>
+          <p>Pertanyaan 2:	Apakah anda tidak memperhatikan kebersihan area sekitar payudara?</p>
           <label>
             <input type="checkbox" id="p2Ya" onclick="jawab('p2', 'ya')"> Ya
           </label>
@@ -312,7 +295,7 @@ button:hover {
         
         <!-- Menambahkan pertanyaan-pertanyaan lainnya secara serupa hingga pertanyaan kelima -->
         <div id="pertanyaan3">
-          <p>Pertanyaan 3: Apakah Anda mengalami sesak napas atau mudah lelah saat beraktivitas?</p>
+          <p>Pertanyaan 3:	Apakah anda mengkonsumsi alkohol?</p>
           <label>
             <input type="checkbox" id="p3Ya" onclick="jawab('p3', 'ya')"> Ya
           </label>
@@ -325,7 +308,7 @@ button:hover {
         </div>
         
         <div id="pertanyaan4">
-          <p>Pertanyaan 4: Apakah Anda sering merasa lelah tanpa alasan yang jelas?</p>
+          <p>Pertanyaan 4: Apakah anda sering mengkonsumsi makanan cepat saji?</p>
           <label>
             <input type="checkbox" id="p4Ya" onclick="jawab('p4', 'ya')"> Ya
           </label>
@@ -338,7 +321,7 @@ button:hover {
         </div>
         
         <div id="pertanyaan5">
-          <p>Pertanyaan 5: Apakah Anda mengalami penurunan berat badan yang tidak disengaja?</p>
+          <p>Pertanyaan 5: Apakah anda sering melakukan olahraga?</p>
           <label>
             <input type="checkbox" id="p5Ya" onclick="jawab('p5', 'ya')"> Ya
           </label>
@@ -349,9 +332,67 @@ button:hover {
             <input type="checkbox" id="p5Tidak" onclick="jawab('p5', 'tidak')"> Tidak
           </label>
         </div>
-      
- 
 
+        <div id="pertanyaan6">
+          <p>Pertanyaan 6:	Apakah saat mandi anda pernah memeriksa bagian sekitar payudara?</p>
+          <label>
+            <input type="checkbox" id="p6Ya" onclick="jawab('p6', 'ya')"> Ya
+          </label>
+          <label>
+            <input type="checkbox" id="p6Kadang" onclick="jawab('p6', 'kadang')"> Kadang
+          </label>
+          <label>
+            <input type="checkbox" id="p6Tidak" onclick="jawab('p6', 'tidak')"> Tidak
+          </label>
+        </div>
+  <div id="pertanyaan7">
+          <p>Pertanyaan 7:	Apakah anda sering memeriksa payudara anda sendiri?</p>
+          <label>
+            <input type="checkbox" id="p7Ya" onclick="jawab('p7', 'ya')"> Ya
+          </label>
+          <label>
+            <input type="checkbox" id="p7Kadang" onclick="jawab('p7', 'kadang')"> Kadang
+          </label>
+          <label>
+            <input type="checkbox" id="p7Tidak" onclick="jawab('p7', 'tidak')"> Tidak
+          </label>
+        </div>
+        <div id="pertanyaan8">
+          <p>Pertanyaan 8:	Apakah anda sering merasakan nyeri di sekitar payudara dan area ketiak (axila)?</p>
+          <label>
+            <input type="checkbox" id="p8Ya" onclick="jawab('p8', 'ya')"> Ya
+          </label>
+          <label>
+            <input type="checkbox" id="p8Kadang" onclick="jawab('p8', 'kadang')"> Kadang
+          </label>
+          <label>
+            <input type="checkbox" id="p8Tidak" onclick="jawab('p8', 'tidak')"> Tidak
+          </label>
+        </div>
+        <div id="pertanyaan9">
+          <p>Pertanyaan 9:	Apakah ada perubahan pada payudara selama siklus menstruasi tersebut?</p>
+          <label>
+            <input type="checkbox" id="p9Ya" onclick="jawab('p9', 'ya')"> Ya
+          </label>
+          <label>
+            <input type="checkbox" id="p9Kadang" onclick="jawab('p9', 'kadang')"> Kadang
+          </label>
+          <label>
+            <input type="checkbox" id="p9Tidak" onclick="jawab('p9', 'tidak')"> Tidak
+          </label>
+        </div>
+        <div id="pertanyaan10">
+          <p>Pertanyaan 10: Apakah di keluarga anda ada yang pernah terkena tumor jinak di payudara?</p>
+          <label>
+            <input type="checkbox" id="p10Ya" onclick="jawab('p10', 'ya')"> Ya
+          </label>
+          <label>
+            <input type="checkbox" id="p10Kadang" onclick="jawab('p10', 'kadang')"> Kadang
+          </label>
+          <label>
+            <input type="checkbox" id="p10Tidak" onclick="jawab('p10', 'tidak')"> Tidak
+          </label>
+        </div>
         <!-- Lanjutan pertanyaan lainnya -->
         <!-- ... -->
         <button type="button" onclick="hitungSkor()">Submit</button>
@@ -393,9 +434,9 @@ function jawab(pertanyaan, jawaban) {
     const tidakChecked = document.getElementById('p1Tidak').checked;
 
     if (yaChecked) {
-      skor += 20;
-    } else if (kadangChecked) {
       skor += 10;
+    } else if (kadangChecked) {
+      skor += 5;
     }
     // Lanjutkan dengan pertanyaan lainnya dan penilaian skor
   } else if (pertanyaan === 'p2') {
@@ -404,9 +445,9 @@ function jawab(pertanyaan, jawaban) {
     const tidakChecked = document.getElementById('p2Tidak').checked;
 
     if (yaChecked) {
-      skor += 20;
-    } else if (kadangChecked) {
       skor += 10;
+    } else if (kadangChecked) {
+      skor += 5;
     }
     // Lanjutkan dengan pertanyaan lainnya dan penilaian skor
   } else if (pertanyaan === 'p3') {
@@ -415,9 +456,9 @@ function jawab(pertanyaan, jawaban) {
     const tidakChecked = document.getElementById('p3Tidak').checked;
 
     if (yaChecked) {
-      skor += 20;
-    } else if (kadangChecked) {
       skor += 10;
+    } else if (kadangChecked) {
+      skor += 5;
     }
     // Lanjutkan dengan pertanyaan lainnya dan penilaian skor
   } else if (pertanyaan === 'p4') {
@@ -426,9 +467,9 @@ function jawab(pertanyaan, jawaban) {
     const tidakChecked = document.getElementById('p4Tidak').checked;
 
     if (yaChecked) {
-      skor += 20;
-    } else if (kadangChecked) {
       skor += 10;
+    } else if (kadangChecked) {
+      skor += 5;
     }
     // Lanjutkan dengan pertanyaan lainnya dan penilaian skor
   } else if (pertanyaan === 'p5') {
@@ -437,9 +478,59 @@ function jawab(pertanyaan, jawaban) {
     const tidakChecked = document.getElementById('p5Tidak').checked;
 
     if (yaChecked) {
-      skor += 20;
-    } else if (kadangChecked) {
       skor += 10;
+    } else if (kadangChecked) {
+      skor += 5;
+    }
+  } else if (pertanyaan === 'p6') {
+    const yaChecked = document.getElementById('p6Ya').checked;
+    const kadangChecked = document.getElementById('p6Kadang').checked;
+    const tidakChecked = document.getElementById('p6Tidak').checked;
+
+    if (yaChecked) {
+      skor += 10;
+    } else if (kadangChecked) {
+      skor += 5;
+    }
+  } else if (pertanyaan === 'p7') {
+    const yaChecked = document.getElementById('p7Ya').checked;
+    const kadangChecked = document.getElementById('p7Kadang').checked;
+    const tidakChecked = document.getElementById('p7Tidak').checked;
+
+    if (yaChecked) {
+      skor += 10;
+    } else if (kadangChecked) {
+      skor += 5;
+    }
+  } else if (pertanyaan === 'p8') {
+    const yaChecked = document.getElementById('p8Ya').checked;
+    const kadangChecked = document.getElementById('p8Kadang').checked;
+    const tidakChecked = document.getElementById('p8Tidak').checked;
+
+    if (yaChecked) {
+      skor += 10;
+    } else if (kadangChecked) {
+      skor += 5;
+    }
+  } else if (pertanyaan === 'p9') {
+    const yaChecked = document.getElementById('p9Ya').checked;
+    const kadangChecked = document.getElementById('p9Kadang').checked;
+    const tidakChecked = document.getElementById('p9Tidak').checked;
+
+    if (yaChecked) {
+      skor += 10;
+    } else if (kadangChecked) {
+      skor += 5;
+    }
+  } else if (pertanyaan === 'p10') {
+    const yaChecked = document.getElementById('p10Ya').checked;
+    const kadangChecked = document.getElementById('p10Kadang').checked;
+    const tidakChecked = document.getElementById('p10Tidak').checked;
+
+    if (yaChecked) {
+      skor += 10;
+    } else if (kadangChecked) {
+      skor += 5;
     }
     // Lanjutkan dengan pertanyaan lainnya dan penilaian skor
   }
@@ -455,6 +546,7 @@ function hitungSkor() {
     umur,
     jenisKelamin
   };
+  skor = Math.min(skor, 100);
 
   document.getElementById('hasilNama').innerText = biodata.nama;
   document.getElementById('hasilUmur').innerText = biodata.umur;
@@ -466,16 +558,17 @@ function hitungSkor() {
   let keterangan = '';
   
   if (skor >= 90) {
-    keterangan = 'Anda memiliki kemungkinan tinggi mengalami anemia, segera konsultasikan dengan dokter untuk evaluasi dan perawatan yang tepat.';
-  } else if (skor >= 70) {
-    keterangan = 'Anda memiliki kemungkinan cukup tinggi mengalami anemia, disarankan untuk segera berkonsultasi dengan dokter untuk evaluasi lebih lanjut.';
-  } else if (skor >= 50) {
-    keterangan = 'Terdapat kemungkinan adanya anemia, sebaiknya konsultasikan dengan dokter untuk pemeriksaan lebih lanjut.';
-  } else if (skor >= 30) {
-    keterangan = 'Terdapat kemungkinan rendah mengalami anemia, tetapi tetap perlu waspada terhadap gejala yang muncul.';
-  } else {
-    keterangan = 'Anda kemungkinan tidak mengalami anemia, namun tetap perhatikan kesehatan secara umum.';
-  }
+    keterangan = 'Anda memiliki kemungkinan tinggi mengalami fibroadenoma mammae, segera konsultasikan dengan dokter untuk evaluasi dan perawatan yang tepat.';
+} else if (skor >= 70) {
+    keterangan = 'Anda memiliki kemungkinan cukup tinggi mengalami fibroadenoma mammae, disarankan untuk segera berkonsultasi dengan dokter untuk evaluasi lebih lanjut.';
+} else if (skor >= 50) {
+    keterangan = 'Terdapat kemungkinan adanya fibroadenoma mammae, sebaiknya konsultasikan dengan dokter untuk pemeriksaan lebih lanjut.';
+} else if (skor >= 30) {
+    keterangan = 'Terdapat kemungkinan rendah mengalami fibroadenoma mammae, tetapi tetap perlu waspada terhadap gejala yang muncul.';
+} else {
+    keterangan = 'Anda kemungkinan tidak mengalami fibroadenoma mammae, namun tetap perhatikan kesehatan secara umum.';
+}
+
 
 
   keteranganElem.innerText = keterangan;
